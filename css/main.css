@@ -1,0 +1,44 @@
+body{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	margin: -.5em -.5em;
+}
+
+.header{
+	background-color: #E1E1E1;
+	padding-top: 3em;
+	padding-bottom: 1em;
+}
+
+.title{
+	font-family: 'Bevan', cursive;
+	font-size: 3.5em;
+	color: #66A8A8;
+}
+
+.add{
+	background-color: #66A8A8;
+	padding: 1.5em 0;
+}
+
+.need{
+	color: white;
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+.inputitem{ 
+	border-style: none;
+	padding: .5em 4em;
+    background: white;
+}
+
+.add-item{
+	vertical-align: middle;
+	padding-left: 4em;
+}
+
+.checked{
+	font-family: 'Codystar', cursive;
+}
+
