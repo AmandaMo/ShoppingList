@@ -2,10 +2,11 @@ body{
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	margin: -.5em -.5em;
+	background-color: #bbdddb;
 }
 
 .header{
-	background-color: #E1E1E1;
+	background-color: #EBF4F4;
 	padding-top: 3em;
 	padding-bottom: 1em;
 }
@@ -18,7 +19,8 @@ body{
 
 .add{
 	background-color: #66A8A8;
-	padding: 1.5em 0;
+	padding-top: 1.5em;
+	padding-bottom: 3em;
 }
 
 .need{
@@ -27,18 +29,59 @@ body{
 	font-weight: 400;
 }
 
+
 .inputitem{ 
 	border-style: none;
-	padding: .5em 4em;
+	padding: .5em 2em;
     background: white;
 }
 
 .add-item{
 	vertical-align: middle;
-	padding-left: 4em;
+	padding-left: 2em;
+}
+
+.shopping-list{
+	margin-left: 25%;
+	margin-right: 25%;
+	padding-top: 3em;
+	color: #66A8A8;
+	font-size: 1.25em;
+}
+
+tr:nth-child(odd) {
+	background: #EBF4F4;
 }
 
 .checked{
 	font-family: 'Codystar', cursive;
 }
 
+input[type=checkbox].css-checkbox {
+							position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+						}
+
+						input[type=checkbox].css-checkbox + label.css-label {
+							padding-left:24px;
+							height:19px; 
+							display:inline-block;
+							line-height:19px;
+							background-repeat:no-repeat;
+							background-position: 0 0;
+							font-size:19px;
+							vertical-align:middle;
+							cursor:pointer;
+
+						}
+
+						input[type=checkbox].css-checkbox:checked + label.css-label {
+							background-position: 0 -19px;
+						}
+						label.css-label {
+				background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_7a485a1ef9f3e74f3ca06b468622cfb3.png);
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
