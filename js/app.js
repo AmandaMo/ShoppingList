@@ -21,14 +21,19 @@ $(document).ready(function() {
 		$('.inputitem').val('');
 	})
 
-	function Delete(){
+	/*function Delete(){
+		console.log("deleted")
 		var par = $(this).parent().parent(); //tr
 		par.remove();
 	};
 
-	$('.delete-item').bind("click", Delete);
+	$('.delete-item').bind("click", Delete); */
 
 	$( '.checkboxes' ).on( 'click', 'input[type="checkbox"]', function () {
-    $( this ).next().toggleClass( '.checked');
+    $( this ).closest('p').toggleClass( '.checked');
 	});
 });	
+
+$(document).on("click", ".delete-item", function(){
+    $(this).parent().parent().remove();
+});
