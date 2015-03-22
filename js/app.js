@@ -1,39 +1,31 @@
 $(document).ready(function() {
 	
-	function Add(){
-		var item = $('.inputitem').val();
-		$('.shopping-list').append(
-			"<tr>"+
-				"<td><input type='checkbox' name='check1'></td>"+
-				"<td><p>"+
-				item +
-				"</p></td>"+
-				"<td><input type='image' src='images/xicon.svg' class='delete-item' height='40em'/></td>"+
-			"</tr>"
-		);
-	};
-	$('.add-item').bind("click", Add);
-
-	$('.add-item').click(function(e){
-		e.preventDefault()
+	$('.add-item').on('click', function(e){
+		e.preventDefault();
 		var newitem = $('.inputitem').val();
-		console.log(newitem)
+		console.log(newitem);
+		$('.shopping-list').append(
+			"<li>"+
+				"<input type='checkbox' name='check1' class='column'>"+
+				"<p class='column'>"+
+				newitem +
+				"</p>"+
+				"<input type='image' src='images/xicon.svg' class='column delete-item' height='40em'/></li>"+
+			"</li>"
+		);
 		$('.inputitem').val('');
-	})
+	});
 
-	/*function Delete(){
-		console.log("deleted")
-		var par = $(this).parent().parent(); //tr
-		par.remove();
-	};
-
-	$('.delete-item').bind("click", Delete); */
 
 	$( '.checkboxes' ).on( 'click', 'input[type="checkbox"]', function () {
-    $( this ).closest('p').toggleClass( '.checked');
+    	$( this ).closest('p').toggleClass( '.checked');
 	});
+
+
+	$(document).on("click", ".delete-item", function(){
+    	$(this).parent().remove();
+	});
+	
 });	
 
-$(document).on("click", ".delete-item", function(){
-    $(this).parent().parent().remove();
-});
+

@@ -62,79 +62,48 @@ body{
 }
 
 .shopping-list{
+	display: table;
+	list-style: none;
 	width: 100%;
 	color: #66A8A8;
 	font-size: 1.25em;
 	border-collapse: collapse;
+	margin: 0 0;
 }
 
-tr:nth-child(odd) {
+li{
+	display: table-row;
+	text-align: center;
+	vertical-align: middle;
+}
+
+li > p{
+	padding-right: 1em;
+}
+
+.column{
+	display: table-cell;
+	line-height: 3em;
+}
+
+li:nth-child(odd) {
 	background: #EBF4F4;
 	overflow: hidden;
 }
 
-td:nth-child(odd) {
-    width: 4em;
-    padding-right: 1em;
-}
-
 .checked{
 	font-family: 'Codystar', cursive;
+	font-weight: 400;
 }
 
 input[type=checkbox]{
+	margin-left: -.25em;
 	height: 2em;
 	width: 2em;
+	vertical-align: middle;
 }
 
-/*.css-label{
-	background-image: url("../images/unchecked.svg");
-	background-size: 1.5em 1.5em;
-	display:inline-block;
-	background-repeat:no-repeat;
-	background-position: 0 0;
-	font-size:1.5em;
-	vertical-align:middle;
-	cursor:pointer;
+.delete-item{
+	margin-bottom: -1em;
+	margin-left: -1.65em;
 }
-
-.css-label{
-	background-image: url("../images/unchecked.svg");
-	background-size: 1.5em 1.5em;
-	display:inline-block;
-	background-repeat:no-repeat;
-	background-position: 0 0;
-	font-size:1.5em;
-	vertical-align:middle;
-	cursor:pointer;
-}
-
-input[type=checkbox].css-checkbox {
-							position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
-						}
-
-						input[type=checkbox].css-checkbox + label.css-label {
-							padding-left:55px;
-							height:43px; 
-							display:inline-block;
-							line-height:43px;
-							background-repeat:no-repeat;
-							background-position: 0 0;
-							font-size:43px;
-							vertical-align:middle;
-							cursor:pointer;
-
-						}
-
-						input[type=checkbox].css-checkbox:checked + label.css-label {
-							background-position: 0 -43px;
-						}
-						label.css-label {
-				background-image:url('../images/unchecked.svg');
-				-webkit-touch-callout: none;
-				-webkit-user-select: none;
-				-khtml-user-select: none;
-				-moz-user-select: none;
-				-ms-user-select: none;
-				user-select: none;
-			}

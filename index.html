@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/main.css">
-	<link href='http://fonts.googleapis.com/css?family=Bevan|Codystar:300|Roboto:400,700,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Bevan|Codystar:300,400|Roboto:400,700,900' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script language="JavaScript" type="text/javascript" src="js/app.js"></script>
 	<title>My Shopping List</title>
@@ -23,33 +23,33 @@
 		</div>
 	</div>
 	<div class="yourlist">
-		<table class="shopping-list">
-			<tr>
-				<td><input type="checkbox" name="check1"></td>
-				<td><p>Milk</p></td>
-				<td><input type="image" src="images/xicon.svg" class="delete-item" height="40em"/></td>
-			</tr>
-			<tr class="checked">
-				<td><input type="checkbox" id="checkbox2" checked></td>
-				<td><p>Eggs</p></td>
-				<td><input type="image" src="images/xicon.svg" class="delete-item" height="40em"/></td>
-			</tr>
-			<tr>
-				<td><input type="checkbox" name="check3"></td>
-				<td><p>Butter </p></td>
-				<td><input type="image" src="images/xicon.svg" class="delete-item" height="40em"/></td>
-			</tr>
-			<tr class="checked">
-				<td><input type="checkbox" name="check4" checked></td>
-				<td><p>Flour</p></td>
-				<td><input type="image" src="images/xicon.svg" class="delete-item" height="40em"/></td>
-			</tr>
-			<tr>
-				<td><input type="checkbox" name="check5"></td>
-				<td><p>Sugar</p></td>
-				<td><input type="image" src="images/xicon.svg" class="delete-item" height="40em"/></td>
-			</tr>
-		</table>
+		<ul class="shopping-list">
+			<li>
+					<input type="checkbox" name="check1" class="column">
+					<p class="column">Milk</p>
+					<input type="image" src="images/xicon.svg" class="column delete-item" height="40em"/>
+			</li>
+			<li>
+					<input type="checkbox" id="checkbox2" checked class="column">
+					<p class="column">Eggs</p>
+					<input type="image" src="images/xicon.svg" class="column delete-item" height="40em"/>
+			</li>
+			<li class="checked">
+				<input type="checkbox" name="check3" class="column">
+				<p class="column">Butter </p>
+				<input type="image" src="images/xicon.svg" class="column delete-item" height="40em"/>
+			</li>
+			<li class="checked">
+				<input type="checkbox" name="check4" checked class="column">
+				<p class="column">Flour</p>
+				<input type="image" src="images/xicon.svg" class="column delete-item" height="40em"/>
+			</li>
+			<li>
+				<input type="checkbox" name="check5" class="column">
+				<p class="column">Sugar</p>
+				<input type="image" src="images/xicon.svg" class="column delete-item" height="40em"/>
+			</li>
+		</ul>
 	</div>
 </body>
 </html>
