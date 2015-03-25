@@ -37,11 +37,10 @@ body{
 	border-color: #bbdddb;
 	padding-top: .25em;
 	padding-bottom: .25em;
-	padding-right: 2em;
     background: white;
     color: #DF4643;
     text-align: center;
-    width: 38%;
+    width: 44%;
 }
 
 .add-item{
@@ -59,6 +58,7 @@ body{
 	border-style: dotted;
 	overflow: hidden;
 	border-color: #66A8A8;
+	margin-bottom: 4em;
 }
 
 .shopping-list{
@@ -96,14 +96,95 @@ li:nth-child(odd) {
 	font-weight: 400;
 }
 
+.unchecked{
+	font-family: 'Roboto', sans-serif;
+}
+
 input[type=checkbox]{
-	margin-left: -.25em;
-	height: 2em;
-	width: 2em;
+	margin-left: 1em;
+	-ms-transform: scale(2.75); /* IE */
+ 	-moz-transform: scale(2.75); /* FF */
+ 	-webkit-transform: scale(2.75); /* Safari and Chrome */
+  	-o-transform: scale(2.75);
 	vertical-align: middle;
 }
 
 .delete-item{
 	margin-bottom: -1em;
 	margin-left: -1.65em;
+}
+
+@media only screen and (max-width: 700px) and (min-width: 500px){
+	.title{
+		font-size: 2.5em;
+	}
+	.cart{
+		height: 10em;
+	}
+	.need{
+		font-size: 1em;
+	}
+	.inputitem{ 
+		font-size: 1.5em;
+		line-height: 1.75em;
+	}
+	.yourlist{
+		margin-top: 3em;
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+
+	.shopping-list{
+		font-size: 1em;
+	}
+	.delete-item{
+	margin-bottom: -1em;
+	margin-left: -2em;
+	}
+	li > p{
+	padding-right: 3em;
+	}
+}
+
+@media only screen and (max-width: 501px){
+	.title{
+		font-size: 2em;
+	}
+	.cart{
+		height: 6em;
+	}
+	.need{
+		font-size: 1em;
+	}
+	.inputitem{ 
+		font-size: 1em;
+		line-height: 2em;
+		width: 50%;
+		margin-left: -3em;
+	}
+	.yourlist{
+		margin-top: 3em;
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	.shopping-list{
+		font-size: 1em;
+	}
+
+	.add-item{
+		position: absolute;
+		margin-left: 1em;
+		margin-top: 0;
+	}
+	.delete-item{
+	margin-bottom: -1em;
+	margin-left: -2em;
+
+	}
+	li > p{
+	padding-right: 3em;
+	}
 }

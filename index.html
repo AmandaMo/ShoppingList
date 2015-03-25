@@ -17,35 +17,35 @@
 		<h3 class="need">I need to pick up...</h3>
 		<div class="inputline">
 			<form>
-				<input type="text" name="item-list" class="inputitem">
+				<input type="text" name="item-list" class="inputitem" maxlength="20" autocomplete="off" placeholder="Type Items Here">
 				<input type="image" src="images/addicon.svg" alt="ssubmit" class="add-item" height="40em"/>
 			</form>
 		</div>
 	</div>
 	<div class="yourlist">
 		<ul class="shopping-list">
-			<li>
-					<input type="checkbox" name="check1" class="column">
+			<li class="unchecked">
+					<input type="checkbox" name="check1" class="column checkbox" >
 					<p class="column">Milk</p>
 					<input type="image" src="images/xicon.svg" class="column delete-item" height="40em"/>
-			</li>
-			<li>
-					<input type="checkbox" id="checkbox2" checked class="column">
+			</li >
+			<li class="unchecked">
+					<input type="checkbox" id="checkbox2" checked class="column checkbox" >
 					<p class="column">Eggs</p>
 					<input type="image" src="images/xicon.svg" class="column delete-item" height="40em"/>
 			</li>
-			<li class="checked">
-				<input type="checkbox" name="check3" class="column">
+			<li class="unchecked">
+				<input type="checkbox" name="check3" class="column checkbox" >
 				<p class="column">Butter </p>
 				<input type="image" src="images/xicon.svg" class="column delete-item" height="40em"/>
 			</li>
-			<li class="checked">
-				<input type="checkbox" name="check4" checked class="column">
+			<li class="unchecked">
+				<input type="checkbox" name="check4" checked class="column checkbox" >
 				<p class="column">Flour</p>
 				<input type="image" src="images/xicon.svg" class="column delete-item" height="40em"/>
 			</li>
-			<li>
-				<input type="checkbox" name="check5" class="column">
+			<li class="unchecked">
+				<input type="checkbox" name="check5" class="column checkbox" >
 				<p class="column">Sugar</p>
 				<input type="image" src="images/xicon.svg" class="column delete-item" height="40em"/>
 			</li>
